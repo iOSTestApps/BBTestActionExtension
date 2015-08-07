@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ActionExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>BBTestActionExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>83227E541B75753900DE86C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83227E681B75754F00DE86C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

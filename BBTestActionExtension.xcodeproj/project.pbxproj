@@ -13,6 +13,9 @@
 		83227E4D1B75753900DE86C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83227E4C1B75753900DE86C9 /* Images.xcassets */; };
 		83227E501B75753900DE86C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83227E4E1B75753900DE86C9 /* LaunchScreen.xib */; };
 		83227E5C1B75753900DE86C9 /* BBTestActionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83227E5B1B75753900DE86C9 /* BBTestActionExtensionTests.swift */; };
+		83227E6E1B75754F00DE86C9 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83227E6D1B75754F00DE86C9 /* ActionViewController.swift */; };
+		83227E701B75754F00DE86C9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83227E6F1B75754F00DE86C9 /* MainInterface.storyboard */; };
+		83227E731B75754F00DE86C9 /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83227E691B75754F00DE86C9 /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,28 @@
 			remoteGlobalIDString = 83227E3F1B75753900DE86C9;
 			remoteInfo = BBTestActionExtension;
 		};
+		83227E711B75754F00DE86C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83227E381B75753900DE86C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83227E681B75754F00DE86C9;
+			remoteInfo = ActionExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83227E771B75754F00DE86C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83227E731B75754F00DE86C9 /* ActionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83227E401B75753900DE86C9 /* BBTestActionExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBTestActionExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +60,10 @@
 		83227E551B75753900DE86C9 /* BBTestActionExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBTestActionExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83227E5A1B75753900DE86C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83227E5B1B75753900DE86C9 /* BBTestActionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBTestActionExtensionTests.swift; sourceTree = "<group>"; };
+		83227E691B75754F00DE86C9 /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83227E6C1B75754F00DE86C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83227E6D1B75754F00DE86C9 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		83227E6F1B75754F00DE86C9 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +81,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83227E661B75754F00DE86C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +96,7 @@
 			children = (
 				83227E421B75753900DE86C9 /* BBTestActionExtension */,
 				83227E581B75753900DE86C9 /* BBTestActionExtensionTests */,
+				83227E6A1B75754F00DE86C9 /* ActionExtension */,
 				83227E411B75753900DE86C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +106,7 @@
 			children = (
 				83227E401B75753900DE86C9 /* BBTestActionExtension.app */,
 				83227E551B75753900DE86C9 /* BBTestActionExtensionTests.xctest */,
+				83227E691B75754F00DE86C9 /* ActionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +149,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		83227E6A1B75754F00DE86C9 /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				83227E6D1B75754F00DE86C9 /* ActionViewController.swift */,
+				83227E6F1B75754F00DE86C9 /* MainInterface.storyboard */,
+				83227E6B1B75754F00DE86C9 /* Supporting Files */,
+			);
+			path = ActionExtension;
+			sourceTree = "<group>";
+		};
+		83227E6B1B75754F00DE86C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83227E6C1B75754F00DE86C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +177,12 @@
 				83227E3C1B75753900DE86C9 /* Sources */,
 				83227E3D1B75753900DE86C9 /* Frameworks */,
 				83227E3E1B75753900DE86C9 /* Resources */,
+				83227E771B75754F00DE86C9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83227E721B75754F00DE86C9 /* PBXTargetDependency */,
 			);
 			name = BBTestActionExtension;
 			productName = BBTestActionExtension;
@@ -150,6 +207,23 @@
 			productReference = 83227E551B75753900DE86C9 /* BBTestActionExtensionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83227E681B75754F00DE86C9 /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83227E741B75754F00DE86C9 /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				83227E651B75754F00DE86C9 /* Sources */,
+				83227E661B75754F00DE86C9 /* Frameworks */,
+				83227E671B75754F00DE86C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			productName = ActionExtension;
+			productReference = 83227E691B75754F00DE86C9 /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +239,9 @@
 					83227E541B75753900DE86C9 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 83227E3F1B75753900DE86C9;
+					};
+					83227E681B75754F00DE86C9 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +260,7 @@
 			targets = (
 				83227E3F1B75753900DE86C9 /* BBTestActionExtension */,
 				83227E541B75753900DE86C9 /* BBTestActionExtensionTests */,
+				83227E681B75754F00DE86C9 /* ActionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83227E671B75754F00DE86C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83227E701B75754F00DE86C9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +311,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83227E651B75754F00DE86C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83227E6E1B75754F00DE86C9 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +326,11 @@
 			isa = PBXTargetDependency;
 			target = 83227E3F1B75753900DE86C9 /* BBTestActionExtension */;
 			targetProxy = 83227E561B75753900DE86C9 /* PBXContainerItemProxy */;
+		};
+		83227E721B75754F00DE86C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83227E681B75754F00DE86C9 /* ActionExtension */;
+			targetProxy = 83227E711B75754F00DE86C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +491,30 @@
 			};
 			name = Release;
 		};
+		83227E751B75754F00DE86C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		83227E761B75754F00DE86C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +540,14 @@
 			buildConfigurations = (
 				83227E631B75753900DE86C9 /* Debug */,
 				83227E641B75753900DE86C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83227E741B75754F00DE86C9 /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83227E751B75754F00DE86C9 /* Debug */,
+				83227E761B75754F00DE86C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
